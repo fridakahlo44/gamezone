@@ -4,6 +4,7 @@ export default function Navbar() {
 
       <a href="/" className="text-3xl font-extrabold">
         GAME<span className="text-yellow-400">ZONE</span>
+        <span className="text-white">ARENA</span>
       </a>
 
 
@@ -16,6 +17,7 @@ export default function Navbar() {
           Ana Sayfa
         </a>
 
+
         <a
           href="/games"
           className="transition hover:text-yellow-400"
@@ -23,12 +25,14 @@ export default function Navbar() {
           Oyunlar
         </a>
 
+
         <a
           href="#"
           className="transition hover:text-yellow-400"
         >
           Etkinlikler
         </a>
+
 
         <a
           href="/profile"
@@ -40,7 +44,12 @@ export default function Navbar() {
       </div>
 
 
-      <div className="flex gap-3">
+      <div className="flex items-center gap-3">
+
+        <div className="hidden rounded-xl border border-yellow-400/40 bg-yellow-400/10 px-4 py-2 text-sm font-bold text-yellow-400 md:block">
+          🪙 10.000 Coin
+        </div>
+
 
         <a
           href="/login"
