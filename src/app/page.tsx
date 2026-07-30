@@ -10,21 +10,33 @@ export default function Home() {
       <Navbar />
 
 
-      {/* Ana Tanıtım Alanı */}
-      <section className="relative flex min-h-[70vh] items-center justify-center overflow-hidden px-6">
+      {/* Hero Alanı */}
+      <section className="relative flex min-h-[75vh] items-center justify-center overflow-hidden px-6">
 
-        <div className="absolute h-96 w-96 rounded-full bg-yellow-400/10 blur-3xl"></div>
+        <div className="absolute h-[500px] w-[500px] rounded-full bg-yellow-400/10 blur-3xl" />
 
         <div className="relative text-center">
 
-          <h1 className="text-7xl font-extrabold">
-            GAME<span className="text-yellow-400">ZONE</span>
+          <h1 className="text-6xl font-black md:text-8xl">
+            GAME
+            <span className="text-yellow-400">ZONE</span>
+            <span>ARENA</span>
           </h1>
 
 
-          <p className="mx-auto mt-6 max-w-xl text-xl text-zinc-400">
-            Yeni nesil oyun platformunda eğlenceli dünyaları keşfet.
+          <p className="mx-auto mt-6 max-w-2xl text-xl text-zinc-400">
+            Yeni nesil oyun platformuna hoş geldin.
+            Eğlenceli oyunları keşfet, seviyeni yükselt ve kendi oyun deneyimini oluştur.
           </p>
+
+
+          <div className="mt-8 flex justify-center gap-4">
+
+            <div className="rounded-xl border border-yellow-400/40 bg-yellow-400/10 px-6 py-3 font-bold text-yellow-400">
+              🪙 10.000 Coin Başlangıç
+            </div>
+
+          </div>
 
 
           <a
@@ -33,6 +45,38 @@ export default function Home() {
           >
             Oyunları Keşfet
           </a>
+
+        </div>
+
+      </section>
+
+
+
+      {/* Kategoriler */}
+      <section className="mx-auto max-w-6xl px-8 pb-20">
+
+        <h2 className="mb-8 text-4xl font-bold">
+          🎮 Kategoriler
+        </h2>
+
+
+        <div className="grid gap-5 md:grid-cols-4">
+
+          {[
+            "Şans Oyunları",
+            "Arcade",
+            "Strateji",
+            "Yeni Oyunlar",
+          ].map((category) => (
+
+            <div
+              key={category}
+              className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6 text-center font-bold transition hover:border-yellow-400 hover:text-yellow-400"
+            >
+              {category}
+            </div>
+
+          ))}
 
         </div>
 
@@ -87,7 +131,6 @@ export default function Home() {
         </div>
 
       </section>
-
 
 
       <Footer />
