@@ -5,7 +5,10 @@ export const games = [
     icon: "🍬",
     color: "from-pink-500 to-purple-700",
     description:
-      "Renkli şekerleri eşleştir, bölümleri tamamla ve yüksek skorunu oluştur."
+      "Renkli şekerleri eşleştir, bölümleri tamamla ve skorunu yükselt.",
+    minCoin: 100,
+    maxCoin: 10000,
+    rewardMultiplier: 2
   },
 
   {
@@ -14,7 +17,10 @@ export const games = [
     icon: "🪙",
     color: "from-yellow-400 to-orange-700",
     description:
-      "Gizli hazineleri keşfet ve macera dolu altın dünyasına katıl."
+      "Gizli hazineleri keşfet ve altın dünyasında maceraya katıl.",
+    minCoin: 250,
+    maxCoin: 25000,
+    rewardMultiplier: 3
   },
 
   {
@@ -23,7 +29,10 @@ export const games = [
     icon: "🎡",
     color: "from-purple-500 to-pink-700",
     description:
-      "Çarkı çevir, sürprizlerle dolu eğlenceli deneyimini yaşa."
+      "Çarkı çevir, farklı sonuçlarla eğlenceli deneyimler yaşa.",
+    minCoin: 100,
+    maxCoin: 50000,
+    rewardMultiplier: 5
   },
 
   {
@@ -32,7 +41,10 @@ export const games = [
     icon: "✈️",
     color: "from-blue-400 to-cyan-700",
     description:
-      "Gökyüzünde ilerleyen uçuş macerasında reflekslerini kullan."
+      "Gökyüzünde ilerleyen uçuş macerasında doğru zamanda karar ver.",
+    minCoin: 500,
+    maxCoin: 100000,
+    rewardMultiplier: 4
   },
 
   {
@@ -41,7 +53,10 @@ export const games = [
     icon: "🍉",
     color: "from-green-400 to-emerald-700",
     description:
-      "Renkli meyvelerle dolu hızlı ve eğlenceli arcade deneyimi."
+      "Renkli meyvelerle hızlı ve eğlenceli arcade deneyimi yaşa.",
+    minCoin: 100,
+    maxCoin: 20000,
+    rewardMultiplier: 3
   },
 
   {
@@ -50,7 +65,10 @@ export const games = [
     icon: "🎯",
     color: "from-red-500 to-orange-600",
     description:
-      "Topları doğru hedeflere gönder ve en yüksek skoru yakala."
+      "Hedefleri vur, skorunu artır ve yeni seviyelere geç.",
+    minCoin: 250,
+    maxCoin: 15000,
+    rewardMultiplier: 2
   },
 
   {
@@ -59,15 +77,21 @@ export const games = [
     icon: "🐟",
     color: "from-cyan-400 to-blue-800",
     description:
-      "Deniz altı dünyasını keşfet ve yeni görevleri tamamla."
+      "Deniz altını keşfet, görevleri tamamla ve puan kazan.",
+    minCoin: 150,
+    maxCoin: 30000,
+    rewardMultiplier: 3
   },
 
   {
     title: "Arena Challenge",
-    category: "Yeni",
+    category: "Özel",
     icon: "🔥",
     color: "from-zinc-600 to-black",
     description:
-      "GameZoneArena özel mücadele alanında skorunu yükselt."
+      "GameZoneArena özel mücadele alanında skorunu test et.",
+    minCoin: 1000,
+    maxCoin: 100000,
+    rewardMultiplier: 5
   }
 ];
